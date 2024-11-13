@@ -1,0 +1,313 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    background-image: url('2.jpg');
+    /* backdrop-filter: blur(10px); */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: xx-large;
+    justify-content: center;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#h1 {
+    margin: 180px;
+    font-weight: 900;
+    font-size: xx-larger;
+    justify-content: center;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main {
+    justify-content: center;
+    display: flex;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: rgba(19, 118, 224, 0.484);
+    padding: 17px;
+    color: white;
+    font-weight: 800;
+    font-size: medium;
+    border-radius: 8px;
+    border: 1px solid rgb(112, 118, 210);
+    margin: 40px;
+}
+
+button:hover {
+    box-shadow: 1px 1px gainsboro;
+}
+
+.btn {
+    color: rgb(114, 89, 89);
+    background-color: rgba(113, 130, 208, 0.718);
+    padding-left: 30px;
+    margin: 40px;
+    padding-right: 30px;
+    border: 1px solid rgba(130, 105, 242, 0.81);
+    border-radius: 25px;
+    font-weight: bold;
+    /* font: bold; */
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(48, 48, 253, 0.853);
+}
+
+input {
+    width: 280px;
+    height: 32px;
+    border: 1px solid rgb(146, 133, 133);
+    border-radius: 6px;
+    box-shadow: 1px 2px grey;
+
+}
+
+table td {
+    padding: 15px;
+    font: 800;
+    font-size: large;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+input-field {
+    background-color: #eaeaea;
+}
+
+.span1 {
+    padding: 5px;
+    color: blue;
+    font-size: larger;
+    font: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.span1:hover {
+    color: rgba(245, 245, 245, 0.541);
+}
+
+.span1 a:hover {
+
+    color: rgba(245, 245, 245, 0.541);
+}
+
+.center {
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    flex-direction: column;
+    background-color: #89a3bd47;
+    height: 500px;
+    width: 460px;
+    border: 1px solid gray;
+    border-radius: 5%;
+    box-shadow: 4px 1px rgba(153, 136, 207, 0.348);
+}
+
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    background-image: linear-gradient(to right, #bb969699, #3333f782);
+    color: white;
+    height: 60px;
+    width: 100%;
+    padding: 2px;
+}
+
+.nav .nav1 a:hover {
+    background-color: rgba(166, 163, 163, 0.396);
+    color: black;
+}
+
+h3 {
+    font-size: 25px;
+    margin: 20px;
+}
+
+.nav div a {
+
+    padding: 6px;
+    /* border: 1px solid rgb(166, 163, 163); */
+    margin: 20px;
+    color: white;
+    font-size: 21px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: transparent;
+    border-radius: 10px;
+    /* box-shadow: 1px 2px grey; */
+}
+
+.nav div a:hover {
+    background-color: rgb(230, 239, 235);
+    color: black;
+    border: 1px solid rgb(231, 217, 217);
+
+}
+
+.sem {
+    color: rgba(231, 17, 17, 0.832);
+    margin: 40px;
+    margin-top: 120px;
+}
+
+.line {
+    height: 1.5px;
+    width: 1230px;
+    background-color: rgba(231, 17, 17, 0.832);
+    margin: 4px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middle {
+    max-height: 100%;
+    width: 420px;
+    background-color: #fff;
+    border: 1px solid rgb(178, 165, 165);
+    border-radius: 4px;
+
+}
+
+.outer {
+    background-color: rgb(226, 218, 218);
+    padding: 15px;
+    border: 5px thin grey;
+}
+
+.inner {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.input {
+    padding: 8px;
+    border: 1px solid rgb(236, 226, 226);
+    margin-left:  20px;
+}
+
+.input input::placeholder {
+    padding: 25px;
+
+}
+
+.input1 input {
+    padding: 10px;
+    width: 140px;
+    background-color: rgba(47, 47, 118, 0.64);
+    height: 40px;
+    border: 1px solid rgb(236, 226, 226);
+    color:white;
+    font-size:medium;
+    border-radius: 14px;
+    margin: 18px 10px 30px 20px;
+}
+.input1 input:hover{
+    background-color: rgba(20, 20, 221, 0.529);
+}
+#pic input {
+padding:5px;
+font-size: 17px;
+}
+
+.table {
+    margin: 20px;
+    border: 1px solid rgba(70, 76, 164, 0.205);
+
+
+}
+
+th {
+    background-color: #c5aeae45;
+    width: 100vh;
+    height: 45px;
+    font-size: 35px;
+    font-weight: 200;
+    border: 1px solid rgba(53, 20, 200, 0.084);
+
+}
+
+main {
+    margin: 70px;
+    border: 1px solid rgba(90, 78, 133, 0.256);
+}
+
+table td button {
+    color: rgb(77, 71, 71);
+    background-color: rgb(219, 233, 232);
+    border-radius: 15px;
+    border: 1px thin grey;
+
+}
+
+.table tr {
+    border: 1px solid rgba(53, 20, 200, 0.084);
+}
+
+.table table td {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+
+table,
+td,
+th,
+tr {
+    border: 1px thin rgba(93, 82, 141, 0.084);
+    border-collapse: collapse;
+    font-size: medium;
+    font-weight: 100;
+    text-align: center;
+}
+
+.edit {
+    display: flex;
+    justify-content: start;
+    margin-right: 1px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.select {
+    width: 280px;
+    height: 32px;
+    border: 1px solid rgb(146, 133, 133);
+    border-radius: 6px;
+    box-shadow: 1px 2px grey;
+}
