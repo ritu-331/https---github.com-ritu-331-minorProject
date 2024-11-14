@@ -12,7 +12,7 @@ export default function StudentSignUp() {
         <div className=" mt-32 flex fle-col items-center justify-center px-4 ">
           <div className="grid md:grid-cols-2  items-center justify-around gap-4 max-w-6xl w-full ">
             <div className=" rounded-md p-6 w-[80vw] max-w-md shadow-[0_2px_22px_-4px_rgba(93,96,127,0.2)] max-md:mx-auto">
-              <form className="space-y-6">
+              <form className="space-y-6" action='register.php' >
                 <div className="md:mb-16">
                   <h3 className="text-3xl font-extrabold">Student SignUp</h3>
                 </div>
@@ -121,7 +121,8 @@ export default function StudentSignUp() {
                   </div>
                 </div>
                 <div className="!mt-10">
-                  <Link to="/studentHomePage"> <button type="button" className="w-full shadow-xl py-2.5 px-4 text-sm font-semibold rounded text-white bg-[#333] hover:bg-black focus:outline-none">
+                  <Link to="/studentHomePage"> <button type="button" name="signUp"
+                  className="w-full shadow-xl py-2.5 px-4 text-sm font-semibold rounded text-white bg-[#333] hover:bg-black focus:outline-none">
                                     SignIn
                                 </button>
                                 </Link>

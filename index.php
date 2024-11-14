@@ -9,5 +9,21 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <?php
+    if(isset($_SESSION['email'])){
+      $email=$_SESSION['email'];
+      $query=mysqli_query($conn,"SELECT 'Student_signup' WHERE Student_signup.email='$email'");
+      while($row=mysqli_fetchP_array($query)){
+        echo $row['firstName'];
+      }
+    }
+    ?>
   </body>
 </html>
+
+<?php
+session_start();
+include 'connection.php';
+
+?>
