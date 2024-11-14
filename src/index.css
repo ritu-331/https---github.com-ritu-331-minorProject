@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active{
+    @apply bg-red-800 text-white rounded p-2
+}

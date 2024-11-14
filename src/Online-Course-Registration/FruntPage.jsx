@@ -9,8 +9,8 @@ export default function FruntPage() {
         <p className='m-2'>Free Course Registration System</p>
         <div id="main">
            
-               <Link to='/studentLogin'> <button className='bg-white text-black p-2 rounded m-4'>LOGIN AS STUDENT</button> </Link>
-                <Link to="/teacherLogin"><button  className='bg-white text-black p-2 rounded m-4'>LOGIN AS TEACHER</button> </Link>
+               <Link to='/studentSignUP'> <button className='bg-white text-black p-2 rounded m-4'>LOGIN AS STUDENT</button> </Link>
+                <Link to="/teacherSignUp"><button  className='bg-white text-black p-2 rounded m-4'>LOGIN AS TEACHER</button> </Link>
         </div>
     </div>
    </>

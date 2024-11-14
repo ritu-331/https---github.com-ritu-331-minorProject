@@ -7,7 +7,7 @@ import Profile from "./Online-Course-Registration/studentLogin/Profile";
 import Session from "./Online-Course-Registration/teacherLogin/Session";
 import TeacherHomePage from "./Online-Course-Registration/teacherLogin/TeacherHomePage";
 import StudentHomePage from "./Online-Course-Registration/studentLogin/StudentHomePage";
-import SMain from "./Online-Course-Registration/studentLogin/SMain";
+
 import TMain from "./Online-Course-Registration/teacherLogin/tMain";
 import Password from "./Online-Course-Registration/studentLogin/Password";
 import EnrollHistory from "./Online-Course-Registration/studentLogin/EnrollHistory";
@@ -16,6 +16,9 @@ import Department from "./Online-Course-Registration/teacherLogin/Department";
 import TCourses from "./Online-Course-Registration/teacherLogin/TCourses";
 import Action from "./Online-Course-Registration/teacherLogin/Action";
 import RegistrationCourse from "./Online-Course-Registration/studentLogin/RegistrationCourse";
+import StudentSignUp from "./Online-Course-Registration/studentLogin/StudentSignUp";
+import TeacherSignUp from "./Online-Course-Registration/teacherLogin/TeacherSignUp";
+
 
 
 const myRoutes= createBrowserRouter([
@@ -23,15 +26,35 @@ const myRoutes= createBrowserRouter([
         path:"/",
         element:<App/>
     },
-    {
+  {/*  {
         path:"/studentLogin",
-        element:<StudentLoginPage/>
+        element:<StudentLoginPage/>,
     },
     {
         path:"/teacherLogin",
         element:<TeacherLoginPage/>
     
+    }, */},
+    {
+        path:"/studentSignUp",
+        element:<StudentSignUp/>
+
     },
+    {
+        path:"/studentLogin",
+        element:<StudentLoginPage/>,
+    },
+    
+    {
+        path:"/teacherSignUp",
+        element:<TeacherSignUp/>
+
+    },
+    {
+        path:"/teacherLogin",
+        element:<TeacherLoginPage/>
+    
+    }, 
     {
         path:"studentHomePage",
         element:<StudentHomePage/>,

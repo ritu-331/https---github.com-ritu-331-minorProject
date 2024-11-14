@@ -12,7 +12,7 @@ export default function StudentLoginPage() {
                 <div className="grid md:grid-cols-2  items-center justify-around gap-4 max-w-6xl w-full ">
               
 
-                    <div className=" rounded-md p-6  max-w-md shadow-[0_2px_22px_-4px_rgba(93,96,127,0.2)] max-md:mx-auto">
+                    <div className=" rounded-md p-6  w-[80vw] max-w-md shadow-[0_2px_22px_-4px_rgba(93,96,127,0.2)] max-md:mx-auto">
 
                         <form className="space-y-6">
                             <div className="md:mb-16">
@@ -56,7 +56,7 @@ export default function StudentLoginPage() {
                                 </button>
                                 </Link>
                             </div>
-                            <p className="text-sm !mt-10 text-center">Don't have an account <Link to="/register" className="text-blue-600 hover:underline ml-1 whitespace-nowrap">Register here</Link></p>
+                          
                         </form>
                     </div>
                   

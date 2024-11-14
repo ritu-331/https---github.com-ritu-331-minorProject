@@ -1,17 +1,23 @@
-import React, { useRef, useState } from 'react'
+import React, { useReducer, useRef, useState } from 'react'
 import Button from '../components/Button'
+import EnrollHistory from './EnrollHistory'
 
 export default function RegistrationCourse() {
 
-function redReducer(state,action){
+function regReducer(state,action){
   switch(action.type){
     case "add":
       return [...state,action.payload]
+      case "delete":
+        return state.filter((e)=>
+        e.pinCode!=action.payload)
       default :return state
   }
 }
 
+var [history,setHistory]=useState("Before")
 
+const [regData,dispatch]=useReducer(regReducer,[])
 const [registration,setRegistration]=useState({
   stdname:"",
   regNo:"",
@@ -23,7 +29,6 @@ const [registration,setRegistration]=useState({
   course:""
 })
 
-const [regData,setRegData]=useState([])
 
 const handleChange=(e)=>{
   setRegistration({...registration,[e.target.name]:e.target.value})
@@ -36,15 +41,17 @@ const registrationRef=useRef()
 
 const handleSubmit=(e)=>{
   e.preventDefault()
-
+dispatch({type:"add",payload:registration})
+setHistory("After")
   setRegistration({stdname:"",regNo:"",pinCode:"",session:"",department:"",level:"",Semester:"",course:""})
   registrationRef.current.focus()
 }
 
-console.log(regData)
+
   return (
   <>
-   <main className="h-[94vh]  b w-full  flex flex-col justify-center items-center">
+  <div className='w-full  bg-gray-300 flex flex-row-reverse  items-center'><div  onClick={()=>setHistory("After")}><  Button btn="Registration History"/></div></div>
+{history=="Before"&&   <main className="  b w-full  flex flex-col justify-center items-center">
         <div className="border-2 border-black m-4 p-4 w-[80vw]  rounded">
           <label className="text-sm mb-3 block">Student Name</label>
           <div className="relative flex items-center">
@@ -163,8 +170,8 @@ console.log(regData)
       
 
        
-      </main>
-
+      </main>}
+      {history=="After"&&<EnrollHistory regData={regData}/>}
   </>
   )
 }
